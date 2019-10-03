@@ -9,27 +9,27 @@ from scipy.stats import expon, gamma
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots(1, 1)
 
-lambda = 10
+exp_lambda = 10
 size = 1000
 
-x = expon.rvs(loc=lambda, scale=1/lambda, size=size)
-y = expon.rvs(loc=lambda, scale=1/lambda, size=size)
+x = expon.rvs(loc=exp_lambda, scale=1/exp_lambda, size=size)
+y = expon.rvs(loc=exp_lambda, scale=1/exp_lambda, size=size)
 
 z = x + y
 
-
-ax.hist(x, density=True, histtype='stepfilled', alpha=0.2)
+#
+ax.hist(x, bins=50) #density=True, histtype='stepfilled', alpha=0.2)
 ax.legend(loc='best', frameon=False)
 
-ax.hist(y, density=True, histtype='stepfilled', alpha=0.2)
-ax.legend(loc='best', frameon=False)
-
-
-ax.hist(z, density=True, histtype='stepfilled', alpha=0.2)
+ax.hist(y, bins=50) #density=True, histtype='stepfilled', alpha=0.2)
 ax.legend(loc='best', frameon=False)
 
 
-fit_alpha, fit_loc, fit_beta=stats.gamma.fit(data)
+ax.hist(z, bins=50) #density=True, histtype='stepfilled', alpha=0.2)
+ax.legend(loc='best', frameon=False)
+
+
+fit_alpha, fit_loc, fit_beta=gamma.fit(z)
 print(fit_alpha, fit_loc, fit_beta)
 
 plt.show()
