@@ -5,7 +5,7 @@ Find the pdf of Z, and obtain its parameters by independantly gnerating 1000 val
 """
 
 import numpy as np
-from scipy.stats import expon
+from scipy.stats import expon, gamma
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots(1, 1)
 
@@ -28,4 +28,10 @@ ax.legend(loc='best', frameon=False)
 ax.hist(z, density=True, histtype='stepfilled', alpha=0.2)
 ax.legend(loc='best', frameon=False)
 
+
+fit_alpha, fit_loc, fit_beta=stats.gamma.fit(data)
+print(fit_alpha, fit_loc, fit_beta)
+
 plt.show()
+
+
