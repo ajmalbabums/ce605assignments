@@ -1,6 +1,7 @@
 """
 Assignment 1
-Let X and Y be two independent identically distributed exponential random variables with mean and standard deviation 10.
+Let X and Y be two independent identically distributed exponential random variables with
+\lambda = 0.15
 Let Z = X + Y
 Find the pdf of Z, and obtain its parameters by independently generating 1000 values for X and Y
 """
