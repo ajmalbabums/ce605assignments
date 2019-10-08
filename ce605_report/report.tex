@@ -1,0 +1,50 @@
+\documentclass[oneside]{iitbaps}  %to print on one side of paper
+%\setcounter{tocdepth}{4}
+%\setcounter{secnumdepth}{4}
+% To include optional packages, use the \usepackage command.
+% For e.g.:
+\usepackage{epsfig}
+\usepackage[breaklinks]{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{svg}
+%\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{hyperref}			
+\usepackage{cleveref}
+\usepackage{subfig} 
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{minted}
+\usepackage[justification=centering]{caption} 
+\usepackage{fancyhdr}
+
+
+\usepackage[sort&compress]{natbib} %for references
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\chaptername}{Assignment}
+%=============================================================%
+% End of Preamble, start of document
+
+
+\begin{document}
+	
+
+\include{./Chapters/aps_prelude}
+\include{./Chapters/chapter1}
+%\include{./Chapters/chapter2}
+%\include{./Chapters/chapter3} 
+%\include{./Chapters/chapter4} 
+%\include{./Chapters/chapter5}
+%\include{./Chapters/chapter6} 
+%\include{./Chapters/chapter7}  
+\bibliographystyle{natbib}
+%{\small
+%\bibliography{Papers}}
+\include{./Chapters/Appendix}
+
+\end{document}
+

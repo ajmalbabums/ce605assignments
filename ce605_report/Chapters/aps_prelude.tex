@@ -1,0 +1,97 @@
+%============================================================================
+% prelude.tex
+%   - titlepage
+%   - dedication (optional)
+%   - table of contents, list of tables and list of figures
+%   - nomenclature
+%   - abstract
+%============================================================================
+
+
+\clearpage%
+\pagenumbering{roman}  % This makes the page numbers Roman (i, ii, etc)
+
+%--------------------------------------------------------------------%
+% TITLE PAGE
+%   - define \title{} \author{} \date{}
+\title{CE 605 Applied Statistics}
+\author{Ajmal Babu M S}
+\date{\today}
+
+%  - Roll number, required for title page, approval sheet, and
+%    certificate of course work 
+\rollnum{194040007} 
+
+%   - The default report type is preliminary report.
+%     For any other type, use  \reporttype{}
+%%\reporttype{report-type}
+% \aps is a shorthand for \reporttype{progress seminar report}
+\reporttype{Assignment Report}
+ 
+
+%\iitbdegree{Doctor of Philosophy}
+%   - The default department is ``Unknown Department''
+%     The department can be changed using the command \department{}
+\department{Department of Civil Engineering}
+
+%    - Set the guide's name
+\setguide{Prof.~Subimal Ghosh}
+%    - Set the coguide's name (if you have one)
+%%\setcoguide{Prof Amitabha Sanyal}
+
+%   - once the above are defined, use \maketitle to generate the titlepage
+\maketitle
+
+%---------------------------------------------------------------------%
+%ACCEPTANCE CERTIFICATE
+%\makeapproval
+\clearpage
+%\input{./Chapters/acceptancecertificate}
+\clearpage
+%--------------------------------------------------------------------%
+% ABSTRACT
+% \begin{abstract}
+% \input{abstract}
+% \end{abstract}
+
+%--------------------------------------------------------------------%
+
+%--------------------------------------------------------------------%
+%\input{listofsymbols}
+% NOMENCLATURE
+% \begin{nomenclature}
+% \begin{description}
+% \item{\makebox[0.75in][l]{$C_1$}} Constant 1
+% 
+% \item{\makebox[0.75in][l]{$V$}}    Voltage 
+% 
+% \item{\makebox[0.75 
+%\listoffigures
+%\listoftablesin][l]{\$}}     US Dollars
+% \end{description}
+% \end{nomenclature}
+
+
+%--------------------------------------------------------------------%
+%  Single counter for theorems and theorem-like environments:
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{assertion}[theorem]{Assertion}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{figger}[theorem]{Figure}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+
+%--------------------------------------------------------------------%
+% Make the page numbers Arabic (1, 2, etc)
+\tableofcontents 
+%\listoffigures
+%\listoftables
+\cleardoublepage%
+\pagenumbering{arabic}
+
+
